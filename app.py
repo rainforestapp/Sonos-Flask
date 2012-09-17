@@ -2,14 +2,14 @@
 
 import sys
 import json
+import os
 
 from flask import Flask
 from soco import SoCo
 
 app = Flask(__name__)
 
-SONOS_IP = '192.168.1.215'
-sonos = SoCo(SONOS_IP)
+sonos = SoCo(os.environ["SONOS_IP"])
 
 
 @app.route("/play")
