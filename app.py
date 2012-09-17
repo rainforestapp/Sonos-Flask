@@ -14,7 +14,10 @@ sonos = SoCo(os.environ["SONOS_IP"])
 
 @app.route("/play")
 def play():
-    return json.dumps(sonos.play())
+    if sonos.play():
+        return json.dumps(sonos.get_current_track_info())
+    else:
+        return json.dumps(False)
 
 @app.route("/pause")
 def pause():
