@@ -22,7 +22,7 @@ or with Heroku
 ### flask.py
 #### License
 
-Copyright (C) 2012 Rahim Sonawalla ([rsonawalla@gmail.com](mailto:rsonawalla@gmail.com) / [@rahims](http://twitter.com/rahims)).
+Copyright (C) 2012 Russell Smith ([@ukd1](http://twitter.com/ukd1)).
 
 Released under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
 
